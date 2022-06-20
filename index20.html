@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Forma</title>
+<meta http-equiv="Content-Type" content="text/html>
+<link href="styling.css" rel="stylesheet" type="text/css" media='screen,projection' />
+</head>
+<body>
+
+<h2>Обратная связь</h2>
+<p id="emailSuccess">
+<strong style="color:green;"><Xt kfkfk?></strong>
+</p>
+<p id="emailError"><strong style="color:red;"><Ваше имя?></strong></p>
+
+<div id="contactFormArea">
+<form action="./" method="post" id="cForm">
+<input type="hidden" name="act" value="y" />
+<fieldset>
+<label for="posName"><b>Âàøå èìÿ:</b></label>
+<input class="text" type="text" size="25" name="posName" id="posName" />
+<label for="posEmail"><b>Âàø E-mail àäðåñ:</b></label>
+<input class="text" type="text" size="25" name="posEmail" id="posEmail" />
+<label for="posRegard"><b>Òåìà ñîîáùåíèÿ:</b></label>
+<input class="text" type="text" size="25" name="posRegard" id="posRegard" />
+<label for="posText"><b>Ñîîáùåíèå:</b></label>
+<textarea cols="50" rows="20" name="posText" id="posText"></textarea>
+<label for="posCaptcha"><center><b>Òåêñò íà èçîáðàæåíèè (öèôðû)</b>:</label><a href='readme.html'><img src="kcaptcha?<?php echo session_name()?>=<?php echo session_id()?>" border=0></a></center><input class="text" type="text" size="25" name="keystring" id="keystring" />
+<br><br><label><input class="submit" type="submit" name="selfCC" id="selfCC" value=" Îòïðàâèòü " /></label>
+</fieldset>
+<?php include 'kcaptcha/kcaptcha_rand.php' ?>
+</form>
+</div>
+
+</body>
+</html>
